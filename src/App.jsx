@@ -7,11 +7,11 @@ import Navbar from './components/Navigation';
 import Carousel from './components/imageslide';
 import Card from './components/photocard';
 import Pagination from "./components/Pagination";
-
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import { MoonLoader } from 'react-spinners';
+import Alert from 'react-bootstrap/Alert';
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      const image = "https://picsum.photos/v2/list?page=2&limit=30";
+      const image = "https://picsum.photos/v2/list?page=2&limit=70";
   
       try {
         const resp = await fetch (image);
@@ -64,13 +64,23 @@ function App() {
       
       <br />
       <Card  photosdata={currentPhotos}/>
-
+     
       <Pagination
                 totalPhotos={photosData.length}
                 postsPerPage={postsPerPage}
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
             />
+            <br />
+       <Alert variant="primary">
+        <i>
+        Find the best royalty free photos and pictures for your design, with thousands of new images added every day. Download free photos of backgrounds, nature, business, food and more that are safe for commercial use.
+
+        </i>
+        </Alert>
+
+        
+      
 
       
 

@@ -1,4 +1,10 @@
-# React + Vite
+# Imaze Bazar.com
+
+Steps involved
+
+- clone this app from Github
+- npm install
+- npm run dev
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

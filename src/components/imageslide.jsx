@@ -27,7 +27,7 @@ const imageslide = ({photos}) => {
               alt={photo.author}
             />
             <Carousel.Caption>
-            <h3>Free photos to tell any story.</h3>
+            <h3>Find millions of top-quality photos that will leave your audience speechless</h3>
             <hr />
               <p>Owner : {photo.author}</p>
             </Carousel.Caption>
@@ -63,7 +63,7 @@ const imageslide = ({photos}) => {
             <strong className="me-auto">React Project</strong>
             <small>11 second ago 🕛</small>
           </Toast.Header>
-          <Toast.Body >Woohoo, Download Your Favorite Image, its FREE!</Toast.Body>
+          <Toast.Body variant="success">Woohoo, Download Your Favorite Image, its FREE!</Toast.Body>
         </Toast>
       </Col>
     </div>
